@@ -8,17 +8,14 @@
   <div name="characterinfo" class="sheet-section">
     <div class='sheet-2colrow'>
       <div class='sheet-col' style="display:inline-block;">
-        <label>Character Name:<input class="sheet-right sheet-shorttext" type="text" name="attr_charactername" style="width:65%;"/></label>
-        <label>Player Name:<input class="sheet-right sheet-shorttext" type="text" name="attr_playername" style="width:70%;"/></label>
-        <label>Occupation:<input class="sheet-right sheet-shorttext" type="text" name="attr_occupation" style="width:75%;"/></label>
-        <label>Species:<input class="sheet-right sheet-shorttext" style="width:80%;" type="text" name="attr_species"/></label>
+        <label>Personaje Name:<input class="sheet-right sheet-shorttext" type="text" name="attr_nombre" style="width:65%;"/></label>
+        <label>NombreJugador Name:<input class="sheet-right sheet-shorttext" type="text" name="attr_NombreJugador" style="width:70%;"/></label>
+        <label>Arquetipo:<input class="sheet-right sheet-shorttext" type="text" name="attr_Arquetipo" style="width:75%;"/></label>
+        <label>ReglasEspeciales:<input class="sheet-right sheet-shorttext" style="width:80%;" type="text" name="attr_ReglasEspeciales"/></label>
         <table style="margin-top:-10px; margin-left:-10px;">
           <tr><td>
-            <label>Gender:<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_gender"/></label></td><td>
-            <label>Age:<input  class="sheet-smalltext sheet-shorttext" type="text" name="attr_age"/></label></td><td>
-            <label>Height:<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_height"/></label></td><td>
-            <label>Weight:<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_weight"/></label></td>
-          </tr>
+            <label>Edad:<input  class="sheet-smalltext sheet-shorttext" type="text" name="attr_Edad"/></label></td><td>
+            </tr>
         </table>
         <table style="margin-top: -10px ; margin-left: -10px">
           <tbody>
@@ -49,8 +46,8 @@
   <div name="attributes" class="sheet-section">
     <div class="sheet-3colrow">
 		<div name="Reflexes-Coordination" class="sheet-col">
-			<div name="Reflexes" class="sheet-bold sheet-border">
-        <button type='roll' value='@{whispertoggle} &{template:default} {{name=Reflexes}} {{Roll=[[(@{reflexdice} - 1)d6cf0cs0 + 1d6!cf1cs6 + @{reflexpip} @{modstoggle}]]}}' >Reflexes</button>
+			<div name="Hostias" class="sheet-bold sheet-border">
+        <button type='roll' value='@{whispertoggle} &{template:default} {{name=Hostias}} {{Roll=[[(@{Hostiasdice} - 1)d6cf0cs0 + 1d6!cf1cs6 + @{Hostiaspip} @{modstoggle}]]}}' >Reflexes</button>
         <div style="float:right;">
           <input type="number" name="attr_reflexdice" class="sheet-smallnumber sheet-shortnumber"  min="1" value="3"/>D+<input type="number" name="attr_reflexpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0"/>
         </div>
